@@ -1,6 +1,6 @@
 package javastudy;
 
-//특수문자와 서식문자
+// 특수문자와 서식문자
 public class class_5 {
 
 	public static void main(String[] args) {
@@ -43,10 +43,10 @@ public class class_5 {
 
 		// 실수
 		float f = 1.23f;
-		System.out.printf("f = %f\n", f);
+		System.out.printf("f = %.2f\n", f);
 
 		double d = 1.23456d;
-		System.out.printf("d = %f\n", d);
+		System.out.printf("d = %.5f\n", d); 
 
 	}
 
