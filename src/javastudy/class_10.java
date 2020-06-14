@@ -37,7 +37,7 @@ public class class_10 {
 		do {
 			System.out.println("이 문장은 무조건 실행합니다.");
 			k++;
-		} while (k < 13);
+		} while (k < 14);
 	}
 
 }
