@@ -4,7 +4,7 @@ public class class_4 {
 
 	public static void main(String[] args) {
 
-		 char c = 'a';
+		char c = 'a';
 		System.out.println("c = " + c);
 		int i = 10;
 		System.out.println("i = " + i);
