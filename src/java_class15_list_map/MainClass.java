@@ -28,7 +28,7 @@ public class MainClass {
 		
 		// 데이터 추출
 		String str = list.get(2);
-		System.out.println("list.get(2) : " + str);
+		System.out.println("list.get(2) : " + list.get(2));
 		System.out.println("str : " + str);
 		System.out.println("list : " + list);
 		
@@ -69,14 +69,29 @@ public class MainClass {
 		str = map.get(5);
 		System.out.println("map.get(5) : " + str);
 		
+		System.out.println("map : " + map);
+		
 		// 데이터 제거
 		map.remove(8);
 		System.out.println("map : " + map);
 		
 		// 특정 데이터 포함 유무
+		boolean c = map.containsKey(7);
+		boolean d = map.containsKey(2);
+		System.out.println("map.containsKey(7) : " + c + " / map.containsKey(2) : " + d);
 		
+		c = map.containsValue("!!");
+		d = map.containsValue("world");
+		System.out.println("map.containsValue(\"!!\") :" + c);
+		System.out.println("map.containsValue(\"world\") :" + d);
 		
+		// 데이터 전체 제거
+		map.clear();
+		System.out.println("map : " + map);
 		
+		// 데이터 유무
+		c = map.isEmpty();
+		System.out.println("map.isEmpty() : " + c);
 	}
 	
 }
