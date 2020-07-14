@@ -4,8 +4,8 @@ public class ex04 {
 
 	public static void main(String[] args) {
 		
-		ex04 op = new ex04();
-		op.casting();
+		ex04 sample = new ex04();
+		sample.casting();
 		
 	}
 	// 자료형의 형변환

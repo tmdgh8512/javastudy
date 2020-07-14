@@ -4,12 +4,15 @@ public class ex04_2 {
 
 	public static void main(String[] args) {
 		
-		ex04_2 op = new ex04_2();
-		//op.ifStmt();
-		//op.ifStmt2();
-		//op.ifStmt3();
-		op.ifStmt4(70);
-		op.switchStmt(3);
+		ex04_2 sample = new ex04_2();
+		//sample.ifStmt();
+		//sample.ifStmt2();
+		//sample.ifStmt3();
+		//sample.ifStmt4(70);
+		//sample.switchStmt(18);
+		//sample.switchStmt2(2);
+		//sample.whileLoop();
+		sample.whileLoop2();
 	}
 	
 	/*public void ifStmt() {
@@ -55,7 +58,7 @@ public class ex04_2 {
 		}
 		}
 	}*/
-	
+	/*
 	public void ifStmt4(int point) {
 		if(point > 90) {
 			System.out.println("A");
@@ -68,8 +71,8 @@ public class ex04_2 {
 		} else {
 			System.out.println("F");
 		}
-	}
-	
+	}*/
+	/*
 	public void switchStmt(int wheelNumber) {
 		switch(wheelNumber) {
 		case 1:
@@ -86,8 +89,58 @@ public class ex04_2 {
 			break;
 		default:
 			System.out.println("another car.");
+			break; // break는 않해주면 밑에 경우까지 넘어가게되므로 각각 요소별로 break를 해준다.
+		}
+	}*/
+	
+	public void switchStmt2(int month) {
+		switch(month) {
+		case 1:
+		case 3:
+		case 5:
+		case 7:
+		case 8:
+		case 10:
+		case 12:
+			System.out.println(month + "월 has 31 days. ");
+			break;
+		case 4:
+		case 6:
+		case 9:
+		case 11:
+			System.out.println(month + "월 has 30 days. ");
+			break;
+		case 2:
+			System.out.println(month + "월 has 28 or 29 days ");
+			break;
+		default:
+			System.out.println(month + "월 is not a month");
 			break;
 		}
+	}
+	
+	public void whileLoop() {
+		int loop = 0;
+		while(loop < 12) {
+			loop++;
+			switchStmt2(loop);
+			if(loop==6) {
+			 //	break; // (=)loop = 15;
+			}
+		}
+		/*loop = 0;
+		while(loop < 12) {
+			if(loop==6) continue;
+		}*/ // 무한루프형성
+		
+	}
+	
+	public void whileLoop2() {
+		int loop = 0;
+		do {
+			loop++;
+			switchStmt2(loop);
+		} while(loop < 0);
 	}
 	
 }
